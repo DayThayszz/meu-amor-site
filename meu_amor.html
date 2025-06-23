@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Amo meu namorado</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ffe6f0, #ffe0f5);
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            padding: 100px 20px;
+            color: #c40076;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
+        }
+
+        .hearts {
+            font-size: 40px;
+            animation: float 4s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-20px);
+                opacity: 0.6;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Amo meu namorado, Raphael 💖</h1>
+    <div class="hearts">💗 💘 💝 💖 💕</div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Amo meu namorado</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ffe6f0, #ffe0f5);
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            padding: 100px 20px;
+            color: #c40076;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
+        }
+
+        .hearts {
+            font-size: 40px;
+            animation: float 4s infinite;
+        }
+
+        button {
+            background-color: #ff66b2;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            margin-top: 30px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #cc007a;
+        }
+
+        #mensagem {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #b3005e;
+            min-height: 40px;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-20px);
+                opacity: 0.6;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Amo meu namorado, Raphael 💖</h1>
+    <div class="hearts">💗 💘 💝 💖 💕</div>
+
+    <button onclick="mostrarMensagem()">Clique para ver uma mensagem 💌</button>
+    <div id="mensagem"></div>
+
+    <script>
+        const mensagens = [
+            "Você é o amor da minha vida! 💖",
+            "Com você, tudo é mais bonito. 🌹",
+            "Obrigada por ser tão incrível, Raphael! 💕",
+            "Meu coração é todinho seu. 💘",
+            "Você me faz sorrir todos os dias! 😍"
+        ];
+
+        function mostrarMensagem() {
+            const indice = Math.floor(Math.random() * mensagens.length);
+            document.getElementById("mensagem").innerText = mensagens[indice];
+        }
+    </script>
+</body>
+</html>
+
+
